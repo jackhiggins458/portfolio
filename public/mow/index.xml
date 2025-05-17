@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mows on Jack&#39;s Portfolio 🌱📗💚</title>
+    <link>http://localhost:1313/mow/</link>
+    <description>Recent content in Mows on Jack&#39;s Portfolio 🌱📗💚</description>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/mow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/mow/data_viz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mow/data_viz/</guid>
+      <description>&lt;h1 id=&#34;mathematicians-of-wikipedia&#34;&gt;Mathematicians of Wikipedia&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Where to view this piece: &lt;a href=&#34;https://jackhiggins458.github.io/Wiki-Mathematicians/&#34;&gt;on this page&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;While I enjoy communicating through writing, some ideas are more effectively expressed visually.&lt;/p&gt;
+&lt;p&gt;I majored in maths and computational science at university, where I studied some algorithmics and data visualisation. My love of maths, data visualisation and Wikipedia was what lead to this &amp;ldquo;Mathematicians of Wikipedia&amp;rdquo; page. The inspiration for this visualisation came from a collision of specific interests I had at the time:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

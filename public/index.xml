@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jack&#39;s Portfolio 🌱📗</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jack&#39;s Portfolio 🌱📗</description>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/catan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/catan/</guid>
+      <description>&lt;h1 id=&#34;in-pursuit-of-imbalanced-catan-boards&#34;&gt;In pursuit of (im)balanced Catan boards&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Where to view this piece: [INSERT HERE]&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Recently, I was playing &lt;a href=&#34;https://en.wikipedia.org/wiki/Catan&#34;&gt;Catan&lt;/a&gt; with some friends, and we began to wonder: how could determine how &amp;ldquo;balanced&amp;rdquo; a particular Catan board is?&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/catan/assets/catan_board.png#center&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Curiosity got the better of me, and before I knew it I had a whole project planned out. This is very much a work in progress, but so far I&amp;rsquo;ve been working on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Writing a Python library for working with hexagonal grids.&lt;/li&gt;
+&lt;li&gt;Writing another Python library for visualising the game state of Catan (which I used to generate the image above).&lt;/li&gt;
+&lt;li&gt;Developing an index, composed of multiple measures, to put a number on how &amp;ldquo;balanced&amp;rdquo; a particular board is.&lt;/li&gt;
+&lt;li&gt;Generating a synthetic population of millions of randomly generated boards to apply my index to, and to hopefully find some truly &amp;ldquo;balanced&amp;rdquo; (and some horribly &amp;ldquo;imbalanced&amp;rdquo;) boards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When I get the time, I&amp;rsquo;ll also be looking to complete a write up on Catan board balance, what it means, how I&amp;rsquo;ve measured it, and what I&amp;rsquo;ve found.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/mow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mow/</guid>
+      <description>&lt;h1 id=&#34;mathematicians-of-wikipedia&#34;&gt;Mathematicians of Wikipedia&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Where to view this piece: &lt;a href=&#34;https://jackhiggins458.github.io/Wiki-Mathematicians/&#34;&gt;on this page&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I majored in maths and computational science at university, where I studied some algorithmics and data visualisation. I was able to combine my interests in maths, data visualisation and Wikipedia in this &amp;ldquo;Mathematicians of Wikipedia&amp;rdquo; project. The inspiration for this visualisation came from a few things I had going on at the time:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I was implementing graph algorithms in Python, and wanted some data that I could try visualising their output on.&lt;/li&gt;
+&lt;li&gt;I wanted to try some basic web programming, using HTML and &lt;a href=&#34;https://vega.github.io/vega-lite/&#34;&gt;Vega Lite&lt;/a&gt; graphics library (as an alternative to the &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;ggplot2&lt;/a&gt; library that I usually used).&lt;/li&gt;
+&lt;li&gt;I was interested in the history of mathematics, and was reading a randomly selected mathematician&amp;rsquo;s Wikipedia page each day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This piece is a few years old now, so I wouldn&amp;rsquo;t say it reflects my current skills and abilities, but I&amp;rsquo;m still proud of the passion that I put into it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/nn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nn/</guid>
+      <description>&lt;h1 id=&#34;an-introduction-to-neural-networks&#34;&gt;An introduction to neural networks&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Where to view this piece:  &lt;a href=&#34;https://mybinder.org/v2/gh/jackhiggins458/Neural_Network_Tutorial/HEAD?labpath=notebooks%2F0_Welcome.ipynb&#34;&gt;in this Binder (interactive)&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, or &lt;a href=&#34;https://github.com/jackhiggins458/Neural_Network_Tutorial/blob/main/notebooks/0_Welcome.ipynb&#34;&gt;on GitHub (static)&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;At the ABS, I was an active member of the Machine Learning (ML) Community of Practice, a group open to all staff interested in learning about ML. At the time, there was an increase in the use of ML methods within the organisation. Consequently, there was a large influx of staff joining the community of practice, many of whom didn&amp;rsquo;t have much experience with ML. To help upskill new community members, three colleagues and I organised a series of introductory ML talks and tutorials.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/pipelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pipelines/</guid>
+      <description>&lt;h1 id=&#34;building-reproducible-data-pipelines&#34;&gt;Building reproducible data pipelines&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Where to view this piece: Unfortunately the source code isn&amp;rsquo;t public, but the outputs are available &lt;a href=&#34;https://www.abs.gov.au/statistics/economy/international-trade/characteristics-australian-exporters/latest-release&#34;&gt;in this ABS publication&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I previously worked at the Australian Bureau of Statistics as a data scientist in the methodology division. My day to day work involved developing internal facing tools and analytical pipelines using R, and occasionally in Python.&lt;/p&gt;
+&lt;p&gt;In one project, I was called in to assist the International Trade Statistics team in the redevelopment of their data pipelines and analytical methodology for their Characteristics of Australian Exporters publication, in line with the availability of a new data source. In this work, I:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/tpm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tpm/</guid>
+      <description>&lt;h1 id=&#34;the-proof-is-in-the-pudding-probability&#34;&gt;The proof is in the &lt;del&gt;pudding&lt;/del&gt; probability&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Where to view this piece: &lt;a href=&#34;assets/tpm.pdf&#34;&gt;in this PDF&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/tpm/assets/alien_graph.png#center&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I wrote this essay for an assignment submission in my final semester of my maths undergraduate degree. At the time, I was interested in learning more about graph theory and different types of proofs. I decided to write a short piece explaining the probabilistic method, a non-constructive proof method used occasionally in combinatorics and graph theory.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
