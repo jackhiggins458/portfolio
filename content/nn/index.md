@@ -1,6 +1,6 @@
 # An introduction to neural networks
 
-*Where to view this piece:  [in this Binder (interactive)](https://mybinder.org/v2/gh/jackhiggins458/Neural_Network_Tutorial/HEAD?labpath=notebooks%2F0_Welcome.ipynb) [^1], or [on GitHub (static)](https://github.com/jackhiggins458/Neural_Network_Tutorial/blob/main/notebooks/0_Welcome.ipynb).*
+*Where to view this piece:  [in this Binder (interactive)](https://mybinder.org/v2/gh/jackhiggins458/Neural_Network_Tutorial/HEAD?labpath=notebooks%2F0_Welcome.ipynb). [^1]*
 
 ---
 
@@ -26,5 +26,5 @@ These tutorials were:
 
 I facilitated these tutorials once in 2021 and again in 2022, and received a significant amount of positive (as well as constructive) feedback from participants about their experience.
 
-[^1]: Unfortunately, Binder sometimes takes a long while to launch (and occasionally fails to launch at all). If you're having trouble launching the interactive Binder, try viewing the tutorial on GitHub instead. Please note however that the GitHub preview of the notebooks has a few issues rendering the content accurately.
+[^1]: Unfortunately, Binder sometimes takes a long while to launch (and occasionally fails to launch at all). If you're having trouble launching the interactive Binder, try viewing the tutorial [on GitHub instead](https://github.com/jackhiggins458/Neural_Network_Tutorial/blob/main/notebooks/0_Welcome.ipynb). Please note however that the GitHub preview of the notebooks aren't interactive, and they have a few issues rendering the content accurately.
 

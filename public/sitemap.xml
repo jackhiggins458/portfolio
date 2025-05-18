@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>portfolio.jackhiggins.net/</loc>
+    <loc>//localhost:46291/</loc>
   </url><url>
-    <loc>portfolio.jackhiggins.net/catan/</loc>
+    <loc>//localhost:46291/catan/</loc>
   </url><url>
-    <loc>portfolio.jackhiggins.net/mow/</loc>
+    <loc>//localhost:46291/mow/</loc>
   </url><url>
-    <loc>portfolio.jackhiggins.net/nn/</loc>
+    <loc>//localhost:46291/nn/</loc>
   </url><url>
-    <loc>portfolio.jackhiggins.net/pipelines/</loc>
+    <loc>//localhost:46291/pipelines/</loc>
   </url><url>
-    <loc>portfolio.jackhiggins.net/tpm/</loc>
+    <loc>//localhost:46291/tpm/</loc>
   </url><url>
-    <loc>portfolio.jackhiggins.net/categories/</loc>
+    <loc>//localhost:46291/categories/</loc>
   </url><url>
-    <loc>portfolio.jackhiggins.net/tags/</loc>
+    <loc>//localhost:46291/tags/</loc>
   </url>
 </urlset>

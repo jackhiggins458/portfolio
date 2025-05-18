@@ -1,6 +1,6 @@
 # In pursuit of (im)balanced Catan boards
 
-*Where to view this piece: [INSERT HERE]*
+*Where to view this piece: [in this Binder](https://mybinder.org/v2/gh/jackhiggins458/catan/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2Fanalyse_catan_board.ipynb).*
 
 ---
 
