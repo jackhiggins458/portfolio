@@ -65,7 +65,7 @@ Neat right? There are a variety of similar tools to choose from, and docopt isn'
 
 I also came across [this post](https://blog.djnavarro.net/posts/2021-04-18_pretty-little-clis/) by Danielle Navarro, introducing the [`cli`](https://cli.r-lib.org/) package for generating pretty CLI outputs. The post provides some really helpful examples of how to use [`cli`](https://cli.r-lib.org/), and I definitely recommend checking it out. However, I couldn't see an obvious way to use this package to print tables, so I didn't end up using it. Instead, I found that [`knitr::kable()`](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html) does a great job at generating simple tables, and so I used that instead.
 
-Finally, I wanted to be able to share what the tool can do visually. I initially tried using terminal recorders [charm_VHS](https://github.com/charmbracelet/vhs) and [asciinema](https://github.com/asciinema/asciinema), but I was ran into a few issues with each that I didn't have the time to resolve (I'd already spent far too long mucking around with annoying emoji/unicode font compatibility issues). 
+Finally, I wanted to be able to share what the tool can do visually. I initially tried using terminal recorders [charm_VHS](https://github.com/charmbracelet/vhs) and [asciinema](https://github.com/asciinema/asciinema), but I ran into a few issues with each that I didn't have the time to resolve (I'd already spent far too long mucking around with annoying emoji/unicode font compatibility issues). 
 
 Instead, I used [Carbon](https://carbon.now.sh/) to create an aesthetically pleasing, high resolution images of the CLI in action:
 
