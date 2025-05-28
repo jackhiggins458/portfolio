@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=46291&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 <title>Jack&#39;s Portfolio 🌱📗</title>
 <meta name="keywords" content="">
 <meta name="description" content="Building reproducible data pipelines
-Where to view this piece: Unfortunately the source code isn&rsquo;t public, but the outputs are available in this ABS publication.
+Where to view this piece: Unfortunately the source code isn&rsquo;t public, but some outputs are available in this ABS publication.
+
 
 I previously worked at the Australian Bureau of Statistics as a data scientist in the methodology division. My day to day work involved developing internal facing tools and analytical pipelines using R, and occasionally in Python.
-In one project, I was called in to assist the International Trade Statistics team in the redevelopment of their data pipelines and analytical methodology for their Characteristics of Australian Exporters publication, in line with the availability of a new data source. In this work, I:">
+In one project, I was called in to assist the International Trade Statistics team in the redevelopment of their data pipelines and analytical methodology for an upcoming publication, in response to the availability of a new data source.">
 <meta name="author" content="">
-<link rel="canonical" href="//localhost:46291/pipelines/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:46291/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:46291/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:46291/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:46291/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:46291/safari-pinned-tab.svg">
+<link rel="canonical" href="//localhost:1313/pipelines/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.93f625d739f1d6a5c6f20c146bc6a8d26b233492b34b2220c54b12fd46a04ded.css" integrity="sha256-k/Yl1znx1qXG8gwUa8ao0msjNJKzSyIgxUsS/UagTe0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:46291/pipelines/">
+<link rel="alternate" hreflang="en" href="//localhost:1313/pipelines/">
 <noscript>
     <style>
         #theme-toggle,
@@ -77,7 +78,7 @@ In one project, I was called in to assist the International Trade Statistics tea
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="//localhost:46291/" accesskey="h" title="Jack&#39;s Portfolio 🌱📗 (Alt + H)">Jack&#39;s Portfolio 🌱📗</a>
+            <a href="//localhost:1313/" accesskey="h" title="Jack&#39;s Portfolio 🌱📗 (Alt + H)">Jack&#39;s Portfolio 🌱📗</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -118,13 +119,16 @@ In one project, I was called in to assist the International Trade Statistics tea
 </div>
   </header> 
   <div class="post-content"><h1 id="building-reproducible-data-pipelines">Building reproducible data pipelines<a hidden class="anchor" aria-hidden="true" href="#building-reproducible-data-pipelines">#</a></h1>
-<p><em>Where to view this piece: Unfortunately the source code isn&rsquo;t public, but the outputs are available <a href="https://www.abs.gov.au/statistics/economy/international-trade/characteristics-australian-exporters/latest-release">in this ABS publication</a>.</em></p>
+<p><em>Where to view this piece: Unfortunately the source code isn&rsquo;t public, but some outputs are available <a href="https://www.abs.gov.au/statistics/economy/international-trade/characteristics-australian-exporters/latest-release">in this ABS publication</a>.</em></p>
 <hr>
+<p><img alt="Characteristics of Australian Exporters publication on the ABS website" loading="lazy" src="/pipelines/assets/coae_targets.png"></p>
 <p>I previously worked at the Australian Bureau of Statistics as a data scientist in the methodology division. My day to day work involved developing internal facing tools and analytical pipelines using R, and occasionally in Python.</p>
-<p>In one project, I was called in to assist the International Trade Statistics team in the redevelopment of their data pipelines and analytical methodology for their Characteristics of Australian Exporters publication, in line with the availability of a new data source. In this work, I:</p>
+<p>In one project, I was called in to assist the International Trade Statistics team in the redevelopment of their data pipelines and analytical methodology for an upcoming publication, in response to the availability of a new data source.</p>
+<p>In this work, I:</p>
 <ul>
-<li>Used R to develop a data pipeline that extracted, cleaned, transformed and exported the data needed for this publication. I designed the pipeline to be robust and reusable, by employing input validation, version control, unit testing and build automation.</li>
-<li>Introduced the team to literate programming, by creating a draft publication template in R markdown, allowing them to quickly iterate and test new ideas for their publication.</li>
+<li>Used R to develop a data pipeline that extracted, cleaned, transformed and exported the data needed for this publication. I designed the pipeline to be robust and reusable, by employing input validation, version control, unit testing and build automation (the image above is part of the dependency graph of this pipeline, generated by the build automation package <a href="https://books.ropensci.org/targets/"><code>targets</code></a> ).</li>
+<li>Wrote a script to generate synthetic data. The real data was sensitive in nature, and could only be accessed in a locked-down and restrictive computing environment. By using synthetic data, I was able to iterate more quickly by developing first in a less restrictive environment, before importing the finished pipeline for final testing and use on real data.</li>
+<li>Introduced the team to literate programming, by creating a draft publication template in R markdown, allowing them to easily test new ideas for their publication.</li>
 <li>Consulted with subject matter experts in the team to develop and implement a new data linkage methodology (described in the <a href="https://www.abs.gov.au/methodologies/characteristics-australian-exporters-methodology/2019-20">publication&rsquo;s methodology report</a>), allowing the new, richer data source to be integrated into the analysis.</li>
 </ul>
 <hr>
@@ -140,7 +144,7 @@ In one project, I was called in to assist the International Trade Statistics tea
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="//localhost:46291/">Jack&#39;s Portfolio 🌱📗</a></span> · 
+        <span>&copy; 2025 <a href="//localhost:1313/">Jack&#39;s Portfolio 🌱📗</a></span> · 
 
     <span>
         Powered by

@@ -2,20 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:46291/</loc>
+    <loc>//localhost:1313/</loc>
   </url><url>
-    <loc>//localhost:46291/catan/</loc>
+    <loc>//localhost:1313/afl/</loc>
   </url><url>
-    <loc>//localhost:46291/mow/</loc>
+    <loc>//localhost:1313/catan/</loc>
   </url><url>
-    <loc>//localhost:46291/nn/</loc>
+    <loc>//localhost:1313/mow/</loc>
   </url><url>
-    <loc>//localhost:46291/pipelines/</loc>
+    <loc>//localhost:1313/nn/</loc>
   </url><url>
-    <loc>//localhost:46291/tpm/</loc>
+    <loc>//localhost:1313/pipelines/</loc>
   </url><url>
-    <loc>//localhost:46291/categories/</loc>
+    <loc>//localhost:1313/tpm/</loc>
   </url><url>
-    <loc>//localhost:46291/tags/</loc>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

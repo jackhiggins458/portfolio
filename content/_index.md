@@ -14,9 +14,9 @@ Here are a few personal and professional pieces that I'm proud of:
 
 🔢 [An introduction to neural networks]( {{< relref "nn/index.md" >}} )
 
-🌾 [In pursuit of (im)balanced Catan boards]( {{< relref "catan/index.md" >}} )
-
 🏉 [Faster footy scores]( {{< relref "afl/index.md" >}} )
+
+🌾 [In pursuit of (im)balanced Catan boards]( {{< relref "catan/index.md" >}} )
 
 🛸 [The proof is in the ~~pudding~~ probability]( {{< relref "tpm/index.md" >}} )
 

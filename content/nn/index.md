@@ -4,15 +4,17 @@
 
 ---
 
-At the ABS, I was an active member of the Machine Learning (ML) Community of Practice, a group open to all staff interested in learning about ML. At the time, there was an increase in the use of ML methods within the organisation. Consequently, there was a large influx of staff joining the community of practice, many of whom didn't have much experience with ML. To help upskill new community members, three colleagues and I organised a series of introductory ML talks and tutorials. 
+![neural network meme](assets/meme.jpeg)
 
-While my colleagues worked on talks, I wanted facilitate a more interactive learning experience. To do so, I created a series of tutorials in a Jupyter Lab environment, to introduce attendees to:
+
+
+At the ABS, I was an active member of the Machine Learning (ML) Community of Practice, a group open to all staff interested in learning about ML. At the time, there was an increase in the use of ML methods within the organisation, and so we had a influx of staff joining the community, many of whom didn't have much experience with ML. To help upskill new community members, three colleagues and I organised a series of introductory ML talks and tutorials. 
+
+While my colleagues worked on talks, I wanted facilitate a more interactive learning experience. To do so, I created a series of tutorials in a Jupyter Lab environment that aimed to introduce attendees to:
 
 - Navigating computational notebook environments.
 - Programming fundamentals in the R.
 - Implementing and testing a very basic neural network.
-
-
 
 These tutorials were:
 
@@ -21,8 +23,6 @@ These tutorials were:
 - Written in Markdown and R code using Jupyter Lab.
 - Intended to be followed interactively on [Binder](https://mybinder.org/) in a group setting, with the support of a more experienced facilitator.
 - Updated multiple times after seeking feedback from participants.
-
-
 
 I facilitated these tutorials once in 2021 and again in 2022, and received a significant amount of positive (as well as constructive) feedback from participants about their experience.
 

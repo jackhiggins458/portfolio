@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Jack&#39;s Portfolio 🌱📗</title>
+<meta name="keywords" content="">
+<meta name="description" content="Faster footy scores
+Where to view this piece: on GitHub.
+
+A CLI interface for viewing AFLW and AFLM scores, written in R. Source code and documentation can be found in the repository linked above. Below, I&rsquo;ll outline the motivation and development process.
+
+Motivation
+As a Melburnian, it&rsquo;s hard to get away from the AFL. While I haven&rsquo;t been following closely over the past few years, I do like being able to check in from time to time.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/afl/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.93f625d739f1d6a5c6f20c146bc6a8d26b233492b34b2220c54b12fd46a04ded.css" integrity="sha256-k/Yl1znx1qXG8gwUa8ao0msjNJKzSyIgxUsS/UagTe0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/afl/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="Jack&#39;s Portfolio 🌱📗 (Alt + H)">Jack&#39;s Portfolio 🌱📗</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="faster-footy-scores">Faster footy scores<a hidden class="anchor" aria-hidden="true" href="#faster-footy-scores">#</a></h1>
+<p><em>Where to view this piece: <a href="https://github.com/jackhiggins458/afl_cli">on GitHub</a>.</em></p>
+<hr>
+<p>A CLI interface for viewing AFLW and AFLM scores, written in R. Source code and documentation can be found in the repository linked above. Below, I&rsquo;ll outline the motivation and development process.</p>
+<p><img alt="afl cli interface" loading="lazy" src="/afl/assets/afl.png#center"></p>
+<h2 id="motivation">Motivation<a hidden class="anchor" aria-hidden="true" href="#motivation">#</a></h2>
+<p>As a Melburnian, it&rsquo;s hard to get away from the AFL. While I haven&rsquo;t been following closely over the past few years, I do like being able to check in from time to time.</p>
+<p>However, if you&rsquo;ve ever used the official AFL website, you might have noticed that it can be painfully slow to load. It&rsquo;s also chock full of advertisements and trackers. As a casual fan, I wanted a simple way to quickly check fixtures, ladders, results and live scores. (I also wanted to have a go at writing my own CLI tool, and this seemed like a good excuse.)</p>
+<h2 id="development-process">Development process<a hidden class="anchor" aria-hidden="true" href="#development-process">#</a></h2>
+<h3 id="selecting-a-data-source">Selecting a data source<a hidden class="anchor" aria-hidden="true" href="#selecting-a-data-source">#</a></h3>
+<p>The first thing I needed to figure out was where I could get data from. Searching online, I found the <a href="https://api.squiggle.com.au/">Squiggle API</a>, which offers access to basic data on AFL games. It&rsquo;s a simple and well documented + maintained API, so it seemed like a great place to start.</p>
+<h3 id="choosing-a-language">Choosing a language<a hidden class="anchor" aria-hidden="true" href="#choosing-a-language">#</a></h3>
+<p>I then had to decide what language to use. I started writing a bash script, but it quickly became unwieldy as I continued to add more features. I then decided to move over to R, not because it&rsquo;s a particularly good language for writing CLI tools, but because I&rsquo;m already familiar with it, and learning more about how to develop CLIs using R would be useful in my data science work.</p>
+<h3 id="finding-fitzroy-and-switching-apis">Finding <a href="https://github.com/jimmyday12/fitzRoy"><code>fitzRoy</code></a> and switching APIs<a hidden class="anchor" aria-hidden="true" href="#finding-fitzroy-and-switching-apis">#</a></h3>
+<p>In R, I started out using the <a href="https://httr2.r-lib.org/"><code>httr2</code></a> package to query the Squiggle API directly, before recalling the first law of R: if you&rsquo;re trying to do something, someone else has  already made a package to do it<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It didn&rsquo;t take long to find <a href="https://github.com/jimmyday12/fitzRoy"><code>fitzRoy</code></a>, which is a great little package for accessing a few different AFL APIs (including the Squiggle API).</p>
+<p>Shortly afterwards, I realised that the Squiggle API didn&rsquo;t provide data for the women&rsquo;s competition (AFLW). Luckily, <a href="https://github.com/jimmyday12/fitzRoy"><code>fitzRoy</code></a> provides access to other APIs, including an <a href="https://aflapi.afl.com.au">official AFL API</a> (which I couldn&rsquo;t find any details about online?). The official AFL API does provide data for the AFLW, so I began querying this API instead of Squiggle<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<h3 id="caching-calls-using-memoise-and-cachem">Caching calls using <a href="https://memoise.r-lib.org/"><code>memoise</code></a> and <a href="https://cachem.r-lib.org/"><code>cachem</code></a><a hidden class="anchor" aria-hidden="true" href="#caching-calls-using-memoise-and-cachem">#</a></h3>
+<p>During the early stages of development, I was doing a bunch of iteration and testing, and so I was hitting the API a lot. I knew that I also wanted to minimise the number of API calls in the finished product by caching queries locally, so I began to research methods for caching in R. That&rsquo;s when I came across the <a href="https://memoise.r-lib.org/"><code>memoise</code></a> and <a href="https://cachem.r-lib.org/"><code>cachem</code></a> packages, that allow you to easily cache function call outputs and  manage caches respectively. I used each of these packages to cache calls, using a cache that expired quickly for data that would need to be updated frequently (e.g. live scores), and a separate cache for data that wouldn&rsquo;t be updated (e.g. viewing ladders from past years).</p>
+<h3 id="handling-cli-arguments-and-documentation-with-docopt">Handling CLI arguments and documentation with <a href="https://github.com/docopt/docopt.R"><code>docopt</code></a><a hidden class="anchor" aria-hidden="true" href="#handling-cli-arguments-and-documentation-with-docopt">#</a></h3>
+<p>Now that I had implemented some basic data fetching and caching, I turned to making the R script usable directly as a command from the terminal. I&rsquo;d used a few CLIs before, but I&rsquo;d never written one before, so I did a little research first.</p>
+<p><a href="https://blog.sellorm.com/2017/12/18/learn-to-write-command-line-utilities-in-r/">This series of blog posts</a> by Mark Sellors was a great, simple introduction to writing command line utilities, and is where I came across the  <a href="https://github.com/docopt/docopt.R"><code>docopt</code></a> package.  <a href="https://github.com/docopt/docopt.R"><code>docopt</code></a> makes it easy to both define a CLI and to parse it. You define the interface using a string (that reads like the help message, and is actually returned when the <code>-h</code> flag is used) and then parse the arguments by passing the string into the <code>doctopt</code> function. In practice, this looks like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>doc <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#39;A cli for viewing AFL(W/M) data
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Usage:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  afl (w|m) ladder [--season &lt;year&gt;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  afl (w|m) fixture [--season &lt;year&gt;] [--round &lt;round&gt;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  afl (w|m) results [--season &lt;year&gt;] [--round &lt;round&gt;]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  afl (w|m) live
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Options:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -h --help              Show help.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -s --season &lt;year&gt;     Season [default: {current_year}].
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -r --round &lt;round&gt;     Round of season [default: {current_round}].
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">|&gt;</span> glue<span style="color:#f92672">::</span><span style="color:#a6e22e">glue</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>args <span style="color:#f92672">&lt;-</span> docopt<span style="color:#f92672">::</span><span style="color:#a6e22e">docopt</span>(doc)
+</span></span></code></pre></div><p>Neat right? There are a variety of similar tools to choose from, and docopt isn&rsquo;t without its quirks<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, but the sheer simplicity of defining the interface using a help string was too convenient to pass up.</p>
+<p>I also came across <a href="https://blog.djnavarro.net/posts/2021-04-18_pretty-little-clis/">this post</a> by Danielle Navarro, introducing the <a href="https://cli.r-lib.org/"><code>cli</code></a> package for generating pretty CLI outputs. The post provides some really helpful examples of how to use <a href="https://cli.r-lib.org/"><code>cli</code></a>, and I definitely recommend checking it out. However, I couldn&rsquo;t see an obvious way to use this package to print tables, so I didn&rsquo;t end up using it. Instead, I found that <a href="https://bookdown.org/yihui/rmarkdown-cookbook/kable.html"><code>knitr::kable()</code></a> does a great job at generating simple tables, and so I used that instead.</p>
+<p>Finally, I wanted to be able to share what the tool can do visually. I initially tried using terminal recorders <a href="https://github.com/charmbracelet/vhs">charm_VHS</a> and <a href="https://github.com/asciinema/asciinema">asciinema</a>, but I ran into a few issues with each that I didn&rsquo;t have the time to resolve (I&rsquo;d already spent far too long mucking around with annoying emoji/unicode font compatibility issues).</p>
+<p>Instead, I used <a href="https://carbon.now.sh/">Carbon</a> to create an aesthetically pleasing, high resolution images of the CLI in action:</p>
+<p><img loading="lazy" src="/afl/assets/afl_fixture.png"></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Okay, this isn&rsquo;t really a &ldquo;law&rdquo;. Nevertheless, I&rsquo;m always surprised by how often it holds, and it&rsquo;s something I very much appreciate about the R community.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>The official AFL API isn&rsquo;t without its own limitations. For example, it only seems to report data back to 2012. Going forward, I&rsquo;ll be using <code>fitzRoy</code> to pull on different APIs, depending on the command entered.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>For example, it doesn&rsquo;t support asserting arguments be a certain type. All arguments are read in as logicals or strings, and need to be manually converted to numerics. It also produces some <a href="https://github.com/docopt/docopt.R/issues/49">confusing error messages</a> when arguments are missing or unsupported.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="//localhost:1313/">Jack&#39;s Portfolio 🌱📗</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
