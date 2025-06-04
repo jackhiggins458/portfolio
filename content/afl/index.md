@@ -4,7 +4,7 @@
 
 ---
 
-A CLI interface for viewing AFLW and AFLM scores, written in R. Source code and documentation can be found in the repository linked above. Below, I'll outline the motivation and development process.
+A command line interface for viewing AFLW and AFLM scores, written in R. Source code and documentation can be found in the repository linked above. Below, I'll outline the motivation and development process.
 
 ![afl cli interface](assets/afl.png#center)
 
