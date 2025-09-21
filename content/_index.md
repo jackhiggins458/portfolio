@@ -2,13 +2,13 @@
 
 You've stumbled upon my portfolio. Welcome! 
 
-I'm Jack (he/they). I am an early career data professional, with particular interests in:
+I'm Jack (they/he). I am a data professional, with particular interests in:
 
 - Developing reproducible data analyses. 
 - Communicating technical ideas in fun and engaging ways.
 - Learning new things, especially if it involves maths or plants!
 
-Here are a few personal and professional pieces that I'm proud of:
+Here are a few pieces that I'm proud of:
 
 🛠️ [Building reproducible data pipelines]( {{< relref "pipelines/index.md" >}})
 
